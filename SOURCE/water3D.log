@@ -1,0 +1,19 @@
+++++ Welcome to water3D log file ++++
+RNG allocated memory: 314 MB
+ ++++++++++++++++++++++++++++++++++++++++++
+Source file: gpu_water3D.cu
+ 3D water model, 32 x 32 x 32 lattice, N = 32768, P = 0.45, T = 0.81
+ J_hb = 0.50, J_sigma = 0.08, v_HB = 0.60
+ Flag configuration = 1
+ Monte Carlo Step: 1 Metropolis + 0 Cluster
+ Metropolis: Parallel GPU algorithm
+ Cluster: Swendsen-Wang Parallel GPU algorithm
+ Device = 0
+ 10000 equilibration, 10 updates/measurement, 100000 updates
+ Output file data.out
+ Random seed 44648604
+Starting Chessboard
+Magnetization:	0.181832	+/-	0.000592
+Energy:		-60013.479739	+/-	58.184993
+Max_SW_scans = -1
+ ** simulation done

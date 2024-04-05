@@ -1,0 +1,14 @@
+Pressure                    0.45
+Temperature                 0.815
+Seed                        44648604
+Metropolis_Steps            1
+Cluster_Steps               0
+Equilibrium_Steps           10000
+Sampling_Steps              100000
+Sampling_Interval           10
+R_cutoff			  6.0
+Flag_config                 1
+Flag_distances              0
+Flag_correlation            0
+Flag_chessboard             1
+Device_ID                   0
