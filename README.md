@@ -12,10 +12,10 @@
 This repository contains all the data to reproduce FS data in the main text and supplementary materials.
 
 ###########################
-##### BULK FS MODEL SIMULATION CODE
+##### BULK FS MODEL SOURCE CODE
 ###########################
 
-source folder contains the code and a sample of input/output files
+SOURCE folder contains the code and a sample of input/output files
 
 A) gpu_water.cu : source code
 
