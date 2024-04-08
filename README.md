@@ -58,7 +58,8 @@ C) Output files
 
 FS_WATER_32x32x32_DATA folder contains rough data and analysis script.
 
-A) WATER32_DATA.tar.gz : a tarred file containing L32_T*_P* folders containing FS simulation files
+A) WATER32_DATA.tar.gz : a tarred file containing L32_T*_P* folders containing FS simulation files [AVAILABLE ON REQUEST]
+
 B) Analysis scripts and code
 
 To analyze the data:
