@@ -3,6 +3,10 @@
 ####
 #### A transferable molecular model for accurate thermodynamic studies of water in large-scale systems
 ####
+#### Luis E. Coronas, Oriol Vilanova, and Giancarlo Franzese
+####
+#### Universitat de Barcelona (Spain)
+####
 ######################
 
 This repository contains all the data to reproduce FS data in the main text and supplementary materials.
