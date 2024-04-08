@@ -68,9 +68,10 @@ To analyze the data:
    2nd) execute "bash script_analisi.sh"
    
    You may need to compile KTderivate.c, AlphaPderivate.c, and CPderivate.c
-   Execute: gcc -o KTderivate KTderivate.c -lm
-            gcc -o AlphaPderivate AlphaPderivate.c -lm
-            gcc -o CPderivate CPderivate.c -lm
+   
+	   gcc -o KTderivate KTderivate.c -lm
+	   gcc -o AlphaPderivate AlphaPderivate.c -lm
+	   gcc -o CPderivate CPderivate.c -lm
             
 The script generates L32_P*_*.dat files [INTERNAL UNITS] and L32_P*_*.dat.SI files [INTERNATIONAL SYSTEM UNITS]
 A description of the files used in the paper is in the following:
