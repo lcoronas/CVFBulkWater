@@ -3,9 +3,6 @@
 /*								*/
 /*			Bulk FS Water				*/
 /*								*/
-/*	Luis E. Coronas, Oriol Vilanova, G. Franzese		*/
-/*								*/
-/*		University of Barcelona				*/
 /*								*/
 /****************************************************************/
 
