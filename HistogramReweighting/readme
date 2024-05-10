@@ -1,1 +1,20 @@
-hello
+****************************************************************************************************
+****                                                                                            ****
+****  Liquid-liquid critical point from large-scale simulations of a cooperative ater model     ****
+****                                                                                            ****
+****                      Luis Enrique Coronas and Giancarlo Franzese                           ****
+****                                                                                            ****
+****                                Universitat de Barcelona                                    ****
+****                                                                                            ****
+****************************************************************************************************
+
+This folder contains the code and script to calculate the probability distribution Q(x), where
+    x = B_0( X - X_C),
+    X = lambda^2 sin(m/lambda) + m,
+    m = B(M-M_C), and
+    M = rho + s*e
+
+To compile the code: gfrotran -o histogram_reweighting_mixed_paramSI_norm_x histogram_reweighting_mixed_paramSI_norm_x.f90
+To execute: bash histogram_reweighting_mixed_paramSI_norm_x.sh
+
+The folders containing the simulation data are available from the authors upon request.
