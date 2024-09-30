@@ -1,10 +1,13 @@
 ****************************************************************************************************
 ****                                                                                            ****
-****  Liquid-liquid critical point from large-scale simulations of a cooperative ater model     ****
+****  Phase behavior of metastable water from large-scale simulations of a quantitatively       ****
+****           accurate model near ambient conditions: The liquid-liquid critical point         ****
 ****                                                                                            ****
 ****                      Luis Enrique Coronas and Giancarlo Franzese                           ****
 ****                                                                                            ****
 ****                                Universitat de Barcelona                                    ****
+****                                                                                            ****
+****                            https://arxiv.org/abs/2405.10181                                ****
 ****                                                                                            ****
 ****************************************************************************************************
 
@@ -17,4 +20,4 @@ This folder contains the code and script to calculate the probability distributi
 To compile the code: gfrotran -o histogram_reweighting_mixed_paramSI_norm_x histogram_reweighting_mixed_paramSI_norm_x.f90
 To execute: bash histogram_reweighting_mixed_paramSI_norm_x.sh
 
-The folders containing the simulation data are available from the authors upon request.
+The folders containing the simulation data are available at https://doi.org/10.34810/data1755
