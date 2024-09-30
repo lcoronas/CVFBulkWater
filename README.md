@@ -1,7 +1,6 @@
-# FSBulkWater
+# CVFBulkWater
+#
 ######################
-####
-#### A transferable molecular model for accurate thermodynamic studies of water in large-scale systems
 ####
 #### Luis E. Coronas, Oriol Vilanova, and Giancarlo Franzese
 ####
@@ -9,10 +8,10 @@
 ####
 ######################
 
-This repository contains all the data to reproduce FS data in the main text and supplementary materials.
+This repository contains the source code to run CVF water simulations and scripts for analysis.
 
 ###########################
-##### BULK FS MODEL SOURCE CODE
+##### BULK CVF MODEL SOURCE CODE
 ###########################
 
 SOURCE folder contains the code and a sample of input/output files
@@ -20,23 +19,23 @@ SOURCE folder contains the code and a sample of input/output files
 A) gpu_water.cu : source code
 
    how to compile: nvcc -arch=sm_86 --ptxas-options=--verbose --use_fast_math -O2 -o gpu_water3D gpu_water3D.cu mersenne_inline.cu -lm
-	where -arch=sm_86 should change according to "CUDA Capability Major/Minor version number"
+	where the flag -arch=sm_86 should be set to "CUDA Capability Major/Minor version number" or may be removed
 	
 B) input files:
 
 	1) input_data contains
-		Pressure                    0.45    	# 0.101 MPa
-		Temperature                 0.815    	# 300 K
+		Pressure                    0.45    	# 0.45 Internal units = 0.101 MPa
+		Temperature                 0.815    	# 0.815 Internal units = 300 K
 		Seed                        44648604	# Random number generator seed
 		Metropolis_Steps            1		# Number of Metropolis updates per MC Step
 		Cluster_Steps               0           # Number of Swendsen-Wang updates per MC Step
 		Equilibrium_Steps           10000	# Equilibration steps (not recorded for statictics)
 		Sampling_Steps              100000	# Number of steps (for production)
-		Sampling_Interval           10		# Sample evrey x steps
-		R_cutoff		    6.0		# Cutoff distance van der Waals
+		Sampling_Interval           10		# Sample evrey n steps
+		R_cutoff		    6.0		# Cutoff distance van der Waals. 6.0 Internal units = 17.4 Angstrom
 		Flag_config                 1		# Start from: 0 random config; 1 input config file; 2 fully ordered config
 		Flag_distances              0		# Set to 0. If 1, uses pre-calculated distances in distances file
-		Flag_correlation            0		# 0: Do not calculate autocorrelation function. 1 to enable
+		Flag_correlation            0		# 0: Disable estimate of autocorrelation function. 1 to enable
 		Flag_chessboard             1		# Set to 1. Enabels checherboard algorithm for eta variables [http://hdl.handle.net/2445/197881]
 		Device_ID                   0		# GPU ID. If multiple GPUs are available, enables choosing in which to run
 		
@@ -53,7 +52,7 @@ C) Output files
 	4) config_out : final configuration of the system (to use in sequential annealing or to resume the simulation)
 
 ############################
-##### DATA AND ANALYSIS SCRITPS
+##### ANALYSIS SCRITPS
 ###########################
 
 FS_WATER_32x32x32_DATA folder contains rough data and analysis script.
