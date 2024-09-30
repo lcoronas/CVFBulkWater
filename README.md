@@ -57,16 +57,9 @@ C) Output files
 ##### ANALYSIS SCRITPS
 ###########################
 
-FS_WATER_32x32x32_DATA folder contains rough data and analysis script.
-
-A) WATER32_DATA.tar.gz : a tarred file containing L32_T*_P* folders containing FS simulation files [AVAILABLE ON REQUEST]
-
-B) Analysis scripts and code
-
-To analyze the data:
-
-   1st) untar WATER32_DATA.tar.gz
-   2nd) execute "bash script_analisi.sh"
+CVF_ThermodynamicAnalysis folder contains analysis scripts.
+   
+Run "bash script_analisi.sh" in a directory containing L32_T*_P* folders containing FS simulation files
    
    You may need to compile KTderivate.c, AlphaPderivate.c, and CPderivate.c
    
@@ -75,7 +68,6 @@ To analyze the data:
 	   gcc -o CPderivate CPderivate.c -lm
             
 The script generates L32_P*_*.dat files [INTERNAL UNITS] and L32_P*_*.dat.SI files [INTERNATIONAL SYSTEM UNITS]
-A description of the files used in the paper is in the following:
 
 ###########################
 ##### PROCESSED_DATA
