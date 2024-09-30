@@ -83,7 +83,7 @@ A description of the files used in the paper is in the following:
 
 PROCESSED_DATA folder contains already-processed data
 
-A) FS_isobars.tar.gz contains 
+A) CVF_isobars.tar.gz contains 
 
 	1) L32_P*_density.dat, L32_P*_enthalpy.dat : Density and enthalpy along isobar P [in internal units]
 
@@ -102,7 +102,7 @@ A) FS_isobars.tar.gz contains
 	$2 Isothermal compressibility [GPa^-1]
 	$3 Error in Isothermal compressibility [GPa^-1]
 	
-B) FS_isochores.tar.gz contains 
+B) CVF_isochores.tar.gz contains 
 
 	1) L32_isocora_rho*.dat [internal units]
 	$1 Temperature [internal units]
@@ -112,7 +112,7 @@ B) FS_isochores.tar.gz contains
 	$1 Temperature [K]
 	$2 Pressure [MPa]
 	
-C) FS_phase_diagram.tar.gz contains
+C) CVF_phase_diagram.tar.gz contains
 
 	1) L32_J0.5_Js0.08_vHB0.6_*.dat / L32_J0.5_Js0.08_vHB0.6_*.dat.SI : TMD, TminD, LGSpinodal, CPmax, CPmin, KTmin, KTmax, AlphaP=0 projections into Temperature-Pressure phase diagram
 	$1 Temperature [internal units / K]
